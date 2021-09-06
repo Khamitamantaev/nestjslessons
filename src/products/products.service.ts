@@ -12,7 +12,7 @@ export class ProductsService {
     return this.prisma.product.create({data: createProductDto})
   }
 
-  findAll() {
+   findAll() {
     return this.prisma.product.findMany({where:{ published: true}})
   }
 
